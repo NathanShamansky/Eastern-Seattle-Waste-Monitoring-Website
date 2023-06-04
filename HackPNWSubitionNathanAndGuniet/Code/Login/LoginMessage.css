@@ -1,0 +1,123 @@
+body {
+    font-family: monospace;
+    background-image: url("https://images.unsplash.com/photo-1438401171849-74ac270044ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#register-form, #login-form {
+    max-width: 50%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#email{
+    align-self: center;
+    margin-top: 10px;
+    width: 40%;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000;
+    margin-bottom: 30px;
+}
+
+#password{
+    align-self: center;
+    margin-top: 10px;
+    width: 40%;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #000;
+    margin-bottom: 30px;
+}
+
+#Label{
+    margin-bottom: 10px;
+}
+
+#register-btn {
+    width: 25%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 2px 2px 4px #000;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#login-btn {
+    width: 25%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    background-color: #C0C0C0;
+    color: #333;
+    box-shadow: 2px 2px 4px #000;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+#login-btn:hover{
+    background-color: #27c500;
+}
+#register-btn:hover{
+    background-color: #27c500;
+}
+
+#signup-btn {
+    width: 20%;
+    height: 10%;
+    background-color: lightblue;
+    color: white;
+    transition: all 0.5s ease;
+}
+#signin-btn {
+    width: 20%;
+    height: 10%;
+    background-color: lightblue;
+    color: white;
+    transition: all 0.5s ease;
+}
+#signup-btn.active {
+    left: 50%;
+    background-color: rgb(135, 170, 181);
+}
+#signin-btn.active {
+    left: 0;
+    background-color: rgb(135, 170, 181);
+}
+
+.form-container .form {
+    display: none;
+}
+.form-container .form.active {
+    display: block;
+}
+
+
+#Error-Message{
+    color: red;
+    font-size: 1.2em;
+}
+
+
+
+h1 {
+    margin-top: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+}

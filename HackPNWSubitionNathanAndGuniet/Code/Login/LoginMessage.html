@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="LoginMessage.css">
+</head>
+<body>
+    <h1 contenteditable="true">Eastern Seattle Waste Monitoring Website</h1>
+    <h2>Sign Up / Sign In</h2>
+    <div class="form-container">
+        <div class="form-switch"  style="margin-bottom: 30px;">
+            <button id="signup-btn" class="active">Sign Up</button>
+            <button id="signin-btn">Sign In</button>
+        </div>
+        <form id="sign-up-form" class="form active">
+            <form id="register-form">
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Create a email"></input>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Create a password"></input>
+                <button type="submit" id="register-btn">Register</button>
+            </form>            
+        </form>
+        <form id="sign-in-form" class="form">
+            <form id="login-form">
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter your email"></input>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Enter your password"></input>
+                <button type="submit" id="login-btn">Log In</button>
+            </form>
+            
+        </form>
+    </div>
+    <p id="Error-Message"></p>
+    <p id="Note-at-bottum">Please note that after creating a new account, it may take a few minutes for our servers to update and allow you to sign in. I apologize for any inconvenience and appreciate your patience. (One common error message for this will be: "The email address is badly formatted." I have no idea why this keeps popiing up.)</p>
+    <p>Pirvacy policy: </p>
+    <p>Anyting you send or enter on this website is sent directly to the firebace servers (https://console.firebase.google.com/). We can view anyting you send. You should act as if you are just texting us this data. In other words, enter a fake email, password, and do not enter any private data.</p>
+    <p>Notes for HackPNW:</p>
+    <p>We have reused some assets such as CSS classes (not sure that is what it is called).</p>
+    <script src="LoginMessage.js"></script>
+    <script src="LoginAnimations.js"></script>
+</body>
+</html>

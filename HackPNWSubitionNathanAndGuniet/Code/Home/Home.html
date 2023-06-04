@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNv2SLfDCqYYtdUbZE71disxF585F4ZaM&callback=initMap" async defer></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<header>
+    <div class="ProfileIcon">
+        <img id="profile-icon" src="ProfileImg.png" alt="Profile Icon">
+        <div id="sidebar" class="Sidebar" style="display: none;">
+            <div id="user-email">Error Loading Account</div>
+            <button id="sign-out-btn">Sign Out</button>
+        </div>
+    </div>
+    </div>
+    <h1 contenteditable="true">Eastern Seattle Waste Monitoring Website</h1>
+    <p>The Eastern Seattle Waste Monitoring Initiative is an open bulletin board where anyone can post any information related to litter. We encourage you to report any instances of litter or waste you come across. Your valuable contributions can significantly aid our community in maintaining a cleaner, more sustainable city.</p>
+    <p>Our mission is to try and help Seattle citizens know where they may most effectively help our community.</p>
+</header>
+<body>
+    <div id="all">
+        <label>Post to Seattle board: </label>
+        <textarea id="message"></textarea>
+        <div id="map"></div> 
+        <label for="image-file" id="upload-label" class="custom-file-upload">
+            <i class="fa fa-cloud-upload"></i> Upload Image
+            <input type="file" id="image-file" accept="image/*" />
+        </label>
+        
+        <br>
+
+        <button type="submit" id="send-message-btn">Post</button>
+    
+        <form id="message-form">
+            <div id="recipient">
+            </div>
+        </form>
+        <p style="color:white; margin-top: 40px; margin-bottom: 10px;">Past Posts:</p>
+        <div id="messages-container"></div>
+        
+    </div>
+
+
+    
+</body>
+</html>
+<script src="Home.js"></script>

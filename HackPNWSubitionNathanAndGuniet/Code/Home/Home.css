@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1438401171849-74ac270044ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+    background-repeat: no-repeat;
+    filter: brightness(90%);
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.ProfileIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.Sidebar {
+    background-color: #fff;
+    width: 200px;
+    padding: 20px;
+}
+
+#sign-out-btn {
+    margin-top: 20px;
+    display: block;
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#all {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#send-message-btn {
+    display: block;
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 10px;
+}
+
+#messages-container {
+    background-color: #413651;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: fit-content;
+}
+.SingleMessage{
+    width: 100%;
+    border: 1px solid #ccc; 
+    padding: 2px; 
+    width: fit-content;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+header {
+    background-color: #f5f5f535; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.ProfileIcon img{
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 100%;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: all .5s;
+}
+.ProfileIcon img:hover{
+    background-color: rgb(191, 191, 191);
+}
+
+.Sidebar {
+    display: none;
+    position: absolute;
+    top: 0;
+    height: 99vh;
+    padding: 0px 10px;
+    margin: 0px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1000; 
+    border: 2px solid #000; 
+    border-radius: 10px;
+    background-image: url("../Home/SidebarImage.jpeg");
+    background-size: cover;
+}
+
+.PostedImage{
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.custom-file-upload:hover {
+    background: #333;
+    color: #f4f4f4;
+}
+#message{
+    border-radius: 10px;
+}
+
+.SingleMessage div{
+    width: 100%;
+}
+#map{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
